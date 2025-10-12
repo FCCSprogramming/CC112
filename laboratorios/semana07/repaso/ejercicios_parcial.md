@@ -74,6 +74,8 @@ Se pide:
      $$
 5. Mostrar todas las matrices con formato tabular usando `<iomanip>`.
 
+6. Debe manipular las matrices utilizando doble puntero (no usar notación []). Esto servirá para el tema de asignación dinámica.
+
 
 
 ##  Ejemplo de ejecución
@@ -201,7 +203,7 @@ Se desea desarrollar un programa **modular** que lea **N frases** ingresadas por
 ```
 Ingrese el número de frases (máx. 5): 3
 Frase 1: El agua limpia es esencial para la vida
-Frase 2: Cuidar el agua, es cuidar la vida.
+Frase 2: Cuidar el agua, es cuidar la vida, el agua es vida.
 Frase 3: El aire y el agua son vitales
 
 Ingrese la palabra clave: agua
