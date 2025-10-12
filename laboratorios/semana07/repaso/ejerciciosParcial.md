@@ -5,23 +5,23 @@ $$
 E = [E_0, E_1, E_2, \ldots, E_{n-1}]
 $$
 
-donde $ E_i $ representa la energía medida en el instante $ i $.
+donde $E_i$ representa la energía medida en el instante $i$.
 
 Se desea procesar esta información para obtener:
 
 1. **La energía promedio**, definida como  
-   $$
+$$
    \overline{E} = \frac{1}{n} \sum_{i=0}^{n-1} E_i
-   $$
+$$
 
 2. **Las diferencias centradas** entre mediciones sucesivas, que se calculan para los puntos interiores $(1 ≤ i ≤ n−2)$ mediante la expresión:  
-   $$
+$$
    D_i = \frac{E_{i+1} - E_{i-1}}{2}
-   $$
+$$
 
-   (Los valores en los extremos $ i = 0 $ y $ i = n-1 $ no se calculan).
+   (Los valores en los extremos $i = 0$ y $i = n-1$ no se calculan).
 
-- Lea el número de datos $ n $ (máximo 10) y los valores $ E_i $.  
+- Lea el número de datos $n$ (máximo 10) y los valores $E_i$.  
 - Implemente **dos funciones** que reciban **punteros** como parámetros:
   1. Una función para calcular el **promedio de energía**.
   2. Una función para calcular las **diferencias centradas**.
@@ -54,20 +54,20 @@ Promedio de energía = 4.600
 
 # Ejercicio 2
 
-Se tiene una placa cuadrada representada por una matriz de densidades $ A \in \mathbb{R}^{N\times N} $, con $ N \leq 10 $.
+Se tiene una placa cuadrada representada por una matriz de densidades $A \in \mathbb{R}^{N\times N}$, con $N \leq 10$.
 
-Cada elemento $ A_{ij} $ indica la densidad en el punto $ (i,j) $.
+Cada elemento $A_{ij}$ indica la densidad en el punto $(i,j)$.
 
 Se pide:
 
-1. Leer el valor de $ N $ y los elementos de la matriz $ A $.
-2. Calcular la **transpuesta** $ A^T $.
-3. Calcular la **matriz de inercia** $ I = A \cdot A^T $.
+1. Leer el valor de $N$ y los elementos de la matriz $A$.
+2. Calcular la **transpuesta** $A^T$.
+3. Calcular la **matriz de inercia** $I = A \cdot A^T$.
 4. Calcular:
-   - La **traza** de $ I $:
-     $$
+   - La **traza** de $I$:
+   $$
      \text{tr}(I) = \sum_{i=1}^{N} I_{ii}
-     $$
+   $$
    - La **energía normalizada**:
      $$
      E = \frac{1}{N^2} \sum_{i,j} I_{ij}^2
