@@ -1087,24 +1087,24 @@ Ciclo: 3
 
 === MATRICULAR CURSO ===
 Estudiante: 202300001 - Ana García Pérez
-Código curso: CC101
-Nombre: Programación I
+Código curso: CC112
+Nombre: Fundamentos de Programación
 Créditos: 4
 Profesor: Dr. Carlos Ruiz
 
 === INGRESAR NOTAS ===
-Curso: CC101 - Programación I
+Curso: CC112 - Fundamentos de Programación 
 Examen Parcial: 15
 Examen Final: 16
-Trabajos Académicos: 17
+Promedio de Prácticas: 17
 
 === BOLETA DE NOTAS ===
 Estudiante: Ana García Pérez (202300001)
 Carrera: Ciencia de la Computación - Ciclo: 3
 
-Código  Curso               Créditos  EP   EF   TA   Promedio  Estado
-CC101   Programación I      4         15   16   17   15.90     Aprobado
-CC201   Base de Datos       3         14   13   16   13.70     Aprobado
+Código  Curso                     Créditos  EP   EF   PP   Promedio  Estado
+CC112 Fundamentos de Programación 4         15   16   17   15.90     Aprobado
+CC201   Base de Datos             3         14   13   16   13.70     Aprobado
 
 Promedio Ponderado: 14.95
 Total Créditos: 7
