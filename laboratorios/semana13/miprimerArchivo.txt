@@ -1,0 +1,3 @@
+Este es el contenido de
+de mi primer archivo de texto.
+Texto agregado
