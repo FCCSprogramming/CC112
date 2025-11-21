@@ -16,7 +16,7 @@ Use un archivo binario llamado "estudiantes.dat".
 */
 
 #include <iostream>
-#include <fstream>
+#include <fstream> // flujo de archivos
 using namespace std;
 
 // 1. Definir la estructura
