@@ -7,10 +7,15 @@ private:
     int mes;
     int anio;
 public:
-    // Constructores
-    Fecha(int d, int m, int a); // constructor
-    Fecha(): dia(0), mes(0), anio(0){};
+    // Constructores (funciones especiales)
+    Fecha(int d, int m, int a); // constructor de paremetros
+    Fecha(): dia(0), mes(0), anio(0){}; // constructor por defencto (con lista de inicializadores)
     void mostrar();
+
+    // implementando un destructor
+    ~Fecha(){
+        cout << "Llamando al destructor" << endl;
+    };
 };
 
 //Definicion de funciones miembro
@@ -29,10 +34,10 @@ int main(){
 
     Fecha cumple1(12,12,2025);
 
-    Fecha cumple2; // se crea el objeto y se inicializan con lo que se encuentre en memoria
+    Fecha cumple2; // se crea el objeto y se inicializan con 0 0 0
     
 
-    cumple1.mostrar();
+    //cumple1.mostrar();
     cumple2.mostrar();
     return 0;
 }

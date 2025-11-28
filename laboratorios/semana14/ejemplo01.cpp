@@ -4,13 +4,20 @@ using namespace std;
 // Una clase puede agrupar atributos y funciones
 
 // 1. Definir la clase
+
+class Alumno {
+    int edad;
+    string nombres;
+};
+
+
 class Punto {
 private:
-    double x;
+    double x; // Datos
     double y;
 
 public:
-    void inicializar(double px, double py);
+    void inicializar(double px, double py); // funciones
     void mostrar();
 };
 
@@ -26,7 +33,7 @@ void Punto:: mostrar(){
 
 int main(){
     // 3. Aplicación
-    Punto p; // crear un objeto
+    Punto p; // crear, instanciar un objeto
 
     p.inicializar(3,4);
 

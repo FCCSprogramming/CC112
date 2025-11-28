@@ -42,8 +42,8 @@ void Rectangulo:: mostrar()  const {
 
 int main(){
 
-    // # aplicaion
-    Rectangulo r;
+    // aplicaion
+    Rectangulo r;  // creamos un objeto
 
     r. inicializar(4,3);
 
