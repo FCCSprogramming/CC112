@@ -109,7 +109,7 @@ El proyecto puede incluir, justificando adecuadamente su uso
 
 El repositorio debe estar organizado de la siguiente manera:
 
-```css
+```yaml
 ProyectoFinal/
   include/
     estudiante.h
@@ -203,7 +203,7 @@ Si deseas trabajar solo/a:
 
 ### OPCIÓN 2: Trabajar en pareja (2 estudiantes)
 
-Previamente deben deben coordinar:
+Previamente deben coordinar:
 
 **PASO 1** Uno de los dos crea el equipo
 
