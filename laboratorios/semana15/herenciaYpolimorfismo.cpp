@@ -132,7 +132,7 @@ int main() {
         porque liberar memoria dinámica NO es responsabilidad del destructor.
         
         delete:
-        1. Ejecuta el destructor del objeto (derivado y luego base)
+        1. Ejecuta el destructor del objeto (derivado y luego del objeto base)
         2. Libera la memoria asociada al objeto
     */
     delete a;
@@ -142,100 +142,3 @@ int main() {
 }
 
 
-
-// // EJEMPLO DE HERENCIA EN CLASE
-
-// #include <iostream>
-// using namespace std;
-
-
-// // CLASE BASE
-// class Animal {
-// protected:
-//     string nombre;
-
-// public:
-//     // Definiendo un constructor de parametro
-//     Animal(const string& n): nombre(n) {
-//         cout << "Construyendo Animal" << this->nombre <<endl;
-//     }
-
-//     // Definiendo un destructor
-//     virtual ~Animal() {
-//         cout << "Destruyendo Animal" <<  this->nombre << endl;
-//     }
-
-//     virtual void hablar() {
-//         cout << nombre << "Hace un sonido desconocido" <<endl;
-//     }
-
-//     void informacion() {
-//         cout << "Mi nombre es" << this->nombre << endl;
-//     }
-
-// };
-
-
-// // CLASE DERIVADA 1
-// class Perro : public Animal {
-// public:
-//     Perro (string n) : Animal(n) {
-//         cout << " Construyendo Perro: " << nombre <<endl;
-//     }
-
-//     ~Perro() override {
-//         cout << "Destruyendo Perro" <<  nombre << endl;
-//     }
-
-//     void hablar() override {
-//         cout << nombre << " ladra" <<endl;
-//     }
-
-
-// };
-
-
-// // CLASE DERIVADA 2
-
-// class Gato : public Animal {
-// public:
-//     Gato (string n) : Animal(n) {
-//         cout << " Construyendo Gato: " << nombre <<endl;
-//     }
-
-//     ~Gato() override {
-//         cout << "Destruyendo Gato" <<  nombre << endl;
-//     }
-
-//     void hablar() override {
-//         cout << nombre << " hace miau" <<endl;
-//     }
-
-
-// };
-
-
-
-
-// int main(){
-
-//     // Elementos para alcanzar el polimorfismo
-//     // 1. Puntero a la clase base
-//     Animal* a = new Perro("Bethoven");
-//     Animal * b = new Gato("Cat");
-
-//     // 2. Funciones virtuales
-//     a->hablar();  // No se alcanza el poliimorfismo
-
-//     b->hablar();
-
-//     a->informacion();
-
-
-//     delete a;
-
-//     delete b;
-
-
-//     return 0;
-// }
