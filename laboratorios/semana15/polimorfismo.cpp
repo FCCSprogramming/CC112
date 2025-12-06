@@ -5,7 +5,7 @@ using namespace std;
 // Clase base con método virtual
 class Animal {
 public:
-    void hablar() {
+    virtual void hablar() {
         cout << "El animal hace un sonido." << endl;
     }
 
@@ -15,14 +15,14 @@ public:
 // Clases derivadas
 class Perro : public Animal {
 public:
-    void hablar() {
+    void hablar() override {
         cout << "El perro ladra." << endl;
     }
 };
 
 class Gato : public Animal {
 public:
-    void hablar()  {
+    void hablar() override {
         cout << "El gato maúlla." << endl;
     }
 };
